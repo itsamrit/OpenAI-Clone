@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from 'openai'
 dotenv.config()
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: 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,
 });
 
 const openai = new OpenAIApi(configuration);
@@ -16,7 +16,7 @@ app.use(cors({origin:"*"}));
 app.use(express.json())
 
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow_Origin","https://open-ai-clone-theta.vercel.app/");
+    res.setHeader("Access-Control-Allow_Origin","https://open-ai-clone-pi.vercel.app/");
     res.header("Access-Control-Allow_Origin","Origin, X-Requested-With,Content-Type,Accept");
     next();
 });
